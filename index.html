@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>WebFolio Benjamin EPS</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="w-desktop w-tablette w-smartphone">
+        <div id="logo">
+          <img
+            src="image/LOGO-PERSO_blanc_vectoriser.png"
+            alt="mon logo personnel"
+          />
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="menu">
+          <ul id="switch-ulcolor">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="canvas-wrap">
+      <div id="presentation" class="canvas-content">
+        <div id="profil">
+          <img src="image/icon-avatar.png" alt="photo de profil" />
+        </div>
+        <div id="text-pres">
+          <h1 id="text">Starting...</h1>
+        </div>
+        <div id="skills">
+          <div>
+            <h2>Mes compétences</h2>
+          </div>
+          <div>
+            <img src="image/Illustrator_CC_icon.png" alt="Logo Illustrator" />
+            <img src="image/Photoshop_CC_icon.svg.png" alt="Logo Photoshop" />
+            <img src="image/InDesign_CC_icon.svg.png" alt="Logo Indesign" />
+            <img src="image/Adobe_XD_CC_icon.svg.png" alt="Logo Xd" />
+            <img
+              src="image/After_Effects_CC_icon.svg.png"
+              alt="Logo AfterEffect"
+            />
+            <img src="image/HTML5_icon.png" alt="Logo HTML5" />
+            <img src="image/CSS3_icon.png" alt="Logo CSS3" />
+            <img src="image/JavaScript_icon.png" alt="Logo Javascript" />
+          </div>
+        </div>
+      </div>
+      <div id="canvas" class="gradient"></div>
+    </div>
+
+    <div id="about">
+      <h3 class="element-hide-left">A propos</h3>
+      <div id="flex-about">
+        <div>
+          <p class="element-hide-left">
+            Je m'appelle Benjamin EPS, je suis passionné par le Web depuis 4
+            ans. Après avoir fini ma formation de Design graphique et digital où
+            j'ai découvert ma passion pour le web, je me suis orienté vers un
+            première année dans une formation Web et multimédia.
+          </p>
+        </div>
+        <div>
+          <p class="element-hide-right">
+            Mon parcours m’a permis d’acquérir diverses compétences, comme la
+            maitrise de la suite Adobe avec les logiciels Photoshop pour la
+            réalisation de photomontage, de composition visuelle. Illustrator
+            pour les logos, les icones et les illustrations. Indesign pour la
+            mise en page des toute sortes de formats print comme des flyers, des
+            catalogues… et Xd pour la création de wireframes et de maquettes Web
+            et mobile. Dans la partie web, j’ai appris à utiliser les langages
+            HTML et CSS pour créer un site responsif et le CMS Wordpress.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="lorem">
+      <p class="element-hide-left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eum
+        vitae consequuntur excepturi, et impedit error laudantium dolore quidem
+        corporis nobis minus dolor inventore tempora aut illo quas delectus
+        tenetur similique doloremque veritatis recusandae. Adipisci tempora
+        repellat commodi cumque assumenda?
+      </p>
+      <p class="element-hide-right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eum
+        vitae consequuntur excepturi, et impedit error laudantium dolore quidem
+        corporis nobis minus dolor inventore tempora aut illo quas delectus
+        tenetur similique doloremque veritatis recusandae. Adipisci tempora
+        repellat commodi cumque assumenda?
+      </p>
+    </div>
+
+    <div id="portfolio" class="element-hide">
+      <h4>Mes projets</h4>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a><img src="./image/photomontage-dragon.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="./image/Poster_kisame1.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <video
+              width="607"
+              height="540"
+              controls
+              poster="./image/Screen_spotify.jpg"
+            >
+              <source
+                src="./image/Animation-Spotify-Live.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="./image/cafe_fantaisie-lumiere.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="./image/Mockup_A4.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <video
+              width="607"
+              height="540"
+              controls
+              poster="./image/Screen_logo-dupstep.jpg"
+            >
+              <source src="./image/Anime-logo_dupstep.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div id="copyright">
+          <p class="white">© Copyright 2021 - 2022</p>
+        </div>
+        <div id="mentions">
+          <ul>
+            <li><a href="">Cookies</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="">Conditions générales d'utilisation</a></li>
+          </ul>
+        </div>
+        <div id="reseaux">
+          <a target="_blank" href="https://behance.net/benjamineps">
+            <img src="./image/behance_100px.png" alt="" />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/benjamin-eps/">
+            <img src="./image/Linkedin_100px.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Main library -->
+    <script src="js/three.min.js"></script>
+    <!-- Helpers -->
+    <script src="js/projector.js"></script>
+    <script src="js/canvas-renderer.js"></script>
+    <!-- Visualitzation adjustments -->
+    <script src="js/3d-lines-animation.js"></script>
+    <!-- Animated background color -->
+    <script src="js/color.js"></script>
+
+    <!-- Jquery + Js natif -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script type="text/javascript" src="Js/script.js"></script>
+  </body>
+</html>

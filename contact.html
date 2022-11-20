@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="w-desktop w-tablette w-smartphone">
+        <div id="logo">
+          <img
+            src="image/LOGO-PERSO_blanc_vectoriser.png"
+            alt="mon logo personnel"
+          />
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="menu">
+          <ul id="switch-ulcolor">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="formulaire">
+      <form>
+        <div>
+          <p>
+            <label for="name">Nom : </label>
+            <input
+              type="text"
+              id="name"
+              autofocus
+              required
+              pattern="[a-zA-Z]{0,15}"
+            />
+          </p>
+          <p>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" required pattern="[a-zA-Z]{3,15}" />
+          </p>
+          <p>
+            <label for="tel">Téléphone :</label>
+            <input
+              type="tel"
+              id="tel"
+              required
+              pattern="(01|02|03|04|05|06|07|08|09)[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}"
+            />
+          </p>
+          <p>
+            <label for="email">E-mail :</label>
+            <input
+              type="email"
+              id="email"
+              required
+              pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})"
+            />
+          </p>
+          <p>
+            <input type="submit" value="Envoyer" />
+          </p>
+        </div>
+        <div>
+          <p>Votre message</p>
+          <textarea name="" id="" cols="10" rows="5">...</textarea>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div id="copyright">
+          <p class="white">© Copyright 2021 - 2022</p>
+        </div>
+        <div id="mentions">
+          <ul>
+            <li><a href="">Cookies</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="">Conditions générales d'utilisation</a></li>
+          </ul>
+        </div>
+        <div id="reseaux">
+          <a target="_blank" href="https://behance.net/benjamineps">
+            <img href="#" src="./image/behance_100px.png" alt="" />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/benjamin-eps/">
+            <img href="#" src="./image/Linkedin_100px.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./Js/script.js"></script>
+  </body>
+</html>
